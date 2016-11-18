@@ -3,7 +3,7 @@
     <div class="row">
     <h1 class=" small-8 small-centered columns">Product List</h1>
         </div>
-    <asp:ListView runat="server" ID="productListView" ItemType="Webforms.Models.ProductModel" SelectMethod="productListView_GetData" GroupItemCount="4">
+    <asp:ListView runat="server" ID="productListView" ItemType="Webforms.Models.ProductModel" SelectMethod="listProducts" OnCallingDataMethods="productListView_CallingDataMethods" GroupItemCount="4">
         <EmptyDataTemplate>
             <table>
                 <tr>

@@ -79,3 +79,4 @@ c:\Users\Peter\Documents\Visual Studio 2015\Projects\Webforms\Webforms\bin\rosly
 c:\Users\Peter\Documents\Visual Studio 2015\Projects\Webforms\Webforms\bin\roslyn\vbc.rsp
 c:\Users\Peter\Documents\Visual Studio 2015\Projects\Webforms\Webforms\obj\Debug\Webforms.Migrations.intalise.resources
 c:\Users\Peter\Documents\Visual Studio 2015\Projects\Webforms\Webforms\obj\Debug\Webforms.csproj.GenerateResource.Cache
+C:\Users\Peter\Documents\Visual Studio 2015\Projects\Webforms\Webforms\obj\Debug\Webforms.Migrations.addedDate.resources

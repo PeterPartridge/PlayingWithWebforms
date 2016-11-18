@@ -178,6 +178,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="Account\Web.config" />
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />
+    <Content Include="error.aspx" />
     <Content Include="ProductDetails.aspx" />
     <Content Include="ProductList.aspx" />
     <Content Include="Scripts\CustomJs.js" />
@@ -378,6 +379,8 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="BusinessLogic\categoriesLogic.cs" />
+    <Compile Include="BusinessLogic\productsLogic.cs" />
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -392,12 +395,23 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="error.aspx.cs">
+      <DependentUpon>error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="error.aspx.designer.cs">
+      <DependentUpon>error.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Migrations\201611141349085_intalise.cs" />
     <Compile Include="Migrations\201611141349085_intalise.Designer.cs">
       <DependentUpon>201611141349085_intalise.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201611181610077_addedDate.cs" />
+    <Compile Include="Migrations\201611181610077_addedDate.Designer.cs">
+      <DependentUpon>201611181610077_addedDate.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\catagoryModel.cs" />
@@ -454,6 +468,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201611141349085_intalise.resx">
       <DependentUpon>201611141349085_intalise.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611181610077_addedDate.resx">
+      <DependentUpon>201611181610077_addedDate.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

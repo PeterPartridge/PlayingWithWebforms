@@ -54,6 +54,7 @@ namespace Webforms.Migrations
            {
                CategoryID = 5,
                CategoryName = "Rockets"
+               
            }
   );
 

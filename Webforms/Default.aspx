@@ -5,7 +5,7 @@
         <h1>Elven Toys</h1>
     </div>
     <div>
-        <asp:ListView ID="ListView1" runat="server" ItemType="Webforms.Models.catagoryModel" SelectMethod="ListView1_GetData">
+        <asp:ListView ID="ListView1" runat="server" ItemType="Webforms.Models.catagoryModel" SelectMethod="ListView1_GetData" OnCallingDataMethods="ListView1_CallingDataMethods">
             <EmptyDataTemplate>
                 <h3>Oops we have no products for sale.</h3>
             </EmptyDataTemplate>

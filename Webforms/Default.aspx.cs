@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Webforms.BusinessLogic;
 using Webforms.Models;
 
 namespace Webforms
@@ -17,18 +18,17 @@ namespace Webforms
 
         }
 
+        protected void ListView1_CallingDataMethods(object sender, CallingDataMethodsEventArgs e)
+        {
+            e.DataMethodsObject = new categoriesLogic();
+        }
+
         // The return type can be changed to IEnumerable, however to support
         // paging and sorting, the following parameters must be added:
         //     int maximumRows
         //     int startRowIndex
         //     out int totalRowCount
         //     string sortByExpression
-        public IQueryable<Webforms.Models.catagoryModel> ListView1_GetData()
-        {
-            var items = _db.catagories.OrderBy(c => c.CategoryName).AsQueryable<catagoryModel>();
 
-            return items;
-         
-        }
     }
 }

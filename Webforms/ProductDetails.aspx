@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ProductDetails.aspx.cs" Inherits="Webforms.ProductDetails" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <asp:FormView runat="server" ItemType="Webforms.Models.ProductModel" RenderOuterTable="false" SelectMethod="product_GetItem" >
+    <asp:FormView runat="server" ItemType="Webforms.Models.ProductModel" RenderOuterTable="false" SelectMethod="productGetItem"  
+        OnCallingDataMethods="product_CallingDataMethods">
         <EmptyDataTemplate>
             <h3>We are unable to find any data.</h3>
         </EmptyDataTemplate>
